@@ -119,6 +119,9 @@ scikit-learn
 gymnasium
 stable-baselines3
 torch
+
+```
+
 👤 Author
 Thang Sian Kop
 📧 thangkop97@gmail.com
@@ -130,4 +133,5 @@ MIT License — for academic and research use.
 
 
 ---
+
 
