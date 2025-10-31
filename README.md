@@ -41,8 +41,7 @@ quant-rl-regime-portfolio/
 ├── run_training.py
 └── README.md
 
-
----
+```
 
 ## 🧩 Methodology
 1. **Market Regime Detection**  
@@ -79,7 +78,6 @@ quant-rl-regime-portfolio/
 - **Reinforcement Learning:** `gymnasium`, `stable-baselines3`, `torch`
 - **Data Source:** `yfinance` for SPY, QQQ, IWM, TLT, GLD
 
----
 
 > *“Multi-Regime Reinforcement Learning for Adaptive Portfolio Optimization”* — Thang Sian Kop, 2025  
 
@@ -112,7 +110,6 @@ python src/backtester.py
 python reports/plot_equity.py
 🧰 Requirements
 text
-
 pandas
 numpy
 matplotlib
@@ -130,6 +127,7 @@ Thang Sian Kop
 🪙 License
 MIT License — for academic and research use.
 
----
 
+
+---
 
