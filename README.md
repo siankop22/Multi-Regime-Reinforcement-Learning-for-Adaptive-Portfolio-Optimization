@@ -18,27 +18,29 @@ This repository introduces a **regime-aware RL pipeline**:
 ---
 
 ## ⚙️ Project Structure
+```text
 quant-rl-regime-portfolio/
 ├── data/
-│ ├── prices.csv
-│ ├── returns.csv
-│ ├── features.csv
-│ ├── features_with_regime.csv
-│ ├── hmm_model.pkl
-│ └── ppo_portfolio.zip
+│   ├── prices.csv
+│   ├── returns.csv
+│   ├── features.csv
+│   ├── features_with_regime.csv
+│   ├── hmm_model.pkl
+│   └── ppo_portfolio.zip
 ├── src/
-│ ├── data_collector.py
-│ ├── regime_detector.py
-│ ├── portfolio_env.py
-│ ├── rl_agent.py
-│ └── backtester.py
+│   ├── data_collector.py
+│   ├── regime_detector.py
+│   ├── portfolio_env.py
+│   ├── rl_agent.py
+│   └── backtester.py
 ├── reports/
-│ ├── equity_curve.csv
-│ ├── equity_curve.png
-│ ├── quant_rl_regime_paper.tex
-│ └── quant_rl_regime_paper.pdf
+│   ├── equity_curve.csv
+│   ├── equity_curve.png
+│   ├── quant_rl_regime_paper.tex
+│   └── quant_rl_regime_paper.pdf
 ├── run_training.py
 └── README.md
+
 
 yaml
 Copy code
@@ -81,10 +83,6 @@ Copy code
 - **Data Source:** `yfinance` for SPY, QQQ, IWM, TLT, GLD
 
 ---
-
-## 📄 Download the Paper
-📥 [Download IEEE-style Paper (PDF)](reports/quant_rl_regime_paper.pdf)  
-🧾 [View LaTeX Source](reports/quant_rl_regime_paper.tex)
 
 > *“Multi-Regime Reinforcement Learning for Adaptive Portfolio Optimization”* — Thang Sian Kop, 2025  
 
@@ -139,3 +137,4 @@ yaml
 Copy code
 
 ---
+
