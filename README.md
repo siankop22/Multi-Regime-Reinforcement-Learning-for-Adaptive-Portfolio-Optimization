@@ -42,9 +42,6 @@ quant-rl-regime-portfolio/
 └── README.md
 
 
-yaml
-Copy code
-
 ---
 
 ## 🧩 Methodology
@@ -115,7 +112,7 @@ python src/backtester.py
 python reports/plot_equity.py
 🧰 Requirements
 text
-Copy code
+
 pandas
 numpy
 matplotlib
@@ -133,8 +130,6 @@ Thang Sian Kop
 🪙 License
 MIT License — for academic and research use.
 
-yaml
-Copy code
-
 ---
+
 
