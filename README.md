@@ -1,4 +1,4 @@
-# 🧠 Multi-Regime Reinforcement Learning for Adaptive Portfolio Optimization
+# Multi-Regime Reinforcement Learning for Adaptive Portfolio Optimization
 
 This project demonstrates how **Hidden Markov Models (HMMs)** and **Reinforcement Learning (RL)** can be integrated to build an **adaptive portfolio optimization system** that reallocates assets dynamically based on changing market regimes.
 
@@ -6,18 +6,18 @@ Developed by **Thang Sian Kop**
 
 ---
 
-## 📘 Overview
+## Overview
 Financial markets shift between **bull**, **bear**, and **neutral** regimes where volatility and correlations behave differently.  
 Traditional static portfolios (e.g., mean-variance optimization) fail under these non-stationary conditions.
 
 This repository introduces a **regime-aware RL pipeline**:
-- 🧮 **Regime Detection** — Gaussian Hidden Markov Models identify latent market states.  
-- 🤖 **Policy Learning** — a PPO (Proximal Policy Optimization) agent learns adaptive weight allocations conditioned on the current regime.  
-- 📈 **Evaluation** — backtesting across 2012–2024 shows superior Sharpe ratios and reduced drawdowns.
+- **Regime Detection** — Gaussian Hidden Markov Models identify latent market states.  
+- **Policy Learning** — a PPO (Proximal Policy Optimization) agent learns adaptive weight allocations conditioned on the current regime.  
+- **Evaluation** — backtesting across 2012–2024 shows superior Sharpe ratios and reduced drawdowns.
 
 ---
 
-## ⚙️ Project Structure
+## Project Structure
 ```text
 quant-rl-regime-portfolio/
 ├── data/
@@ -43,7 +43,7 @@ quant-rl-regime-portfolio/
 
 ```
 
-## 🧩 Methodology
+##  Methodology
 1. **Market Regime Detection**  
    Fit a 3-state Gaussian HMM using volatility and cross-asset correlation features to label each trading day as *bull*, *bear*, or *neutral*.
 
@@ -59,7 +59,7 @@ quant-rl-regime-portfolio/
 
 ---
 
-## 📈 Results
+## Results
 ![Equity Curve](reports/equity_curve.png)
 
 | Metric | Mean-Variance | Equal Weight | RL + Regime |
@@ -68,11 +68,11 @@ quant-rl-regime-portfolio/
 | **Max Drawdown** | −18 % | −16 % | **−11 %** |
 | **Annualized Return** | 8.4 % | 8.1 % | **11.7 %** |
 
-✅ The regime-aware RL agent demonstrates smoother equity growth, improved adaptability, and stronger risk-adjusted performance.
+The regime-aware RL agent demonstrates smoother equity growth, improved adaptability, and stronger risk-adjusted performance.
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 - **Python:** `pandas`, `numpy`, `matplotlib`
 - **Machine Learning:** `hmmlearn`, `scikit-learn`
 - **Reinforcement Learning:** `gymnasium`, `stable-baselines3`, `torch`
@@ -83,7 +83,7 @@ quant-rl-regime-portfolio/
 
 ---
 
-## 💡 Future Work
+## Future Work
 - Online regime detection and real-time policy updates  
 - Larger multi-asset universe (global ETFs, crypto, forex)  
 - Reward functions incorporating Value-at-Risk (VaR) and Conditional VaR  
@@ -91,24 +91,24 @@ quant-rl-regime-portfolio/
 
 ---
 
-## 🏁 How to Run
+##  How to Run
 ```bash
-# 1️⃣ Install dependencies
+# 1️ Install dependencies
 pip install -r requirements.txt
 
-# 2️⃣ Fetch data & compute features
+# 2️ Fetch data & compute features
 python src/data_collector.py
 
-# 3️⃣ Detect market regimes
+# 3️ Detect market regimes
 python src/regime_detector.py
 
-# 4️⃣ Train RL agent
+# 4️ Train RL agent
 python src/rl_agent.py
 
-# 5️⃣ Backtest and visualize
+# 5️ Backtest and visualize
 python src/backtester.py
 python reports/plot_equity.py
-🧰 Requirements
+Requirements
 text
 pandas
 numpy
@@ -122,16 +122,17 @@ torch
 
 ```
 
-👤 Author
+Author
 Thang Sian Kop
-📧 thangkop97@gmail.com
-🌐 GitHub @siankop22
+thangkop97@gmail.com
+GitHub @siankop22
 
-🪙 License
+License
 MIT License — for academic and research use.
 
 
 
 ---
+
 
 
